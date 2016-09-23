@@ -1,0 +1,55 @@
+2016-09-18-17_32_43
+调用login函数
+登录成功
+进入产品管理页找总计
+总计读取成功
+开始添加新产品
+添加新产品找不到元素
+Message: Unable to locate element: {"method":"name","selector":"product.productName"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/dell/appdata/local/temp/tmplty516/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///c:/users/dell/appdata/local/temp/tmplty516/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+成功添加新产品，开始校验
+is_add_product_ok函数调用
+添加产品后总计校验不成功
+添加产品后数据库总计校验成功
+函数程序有误：
+<type 'exceptions.Exception'>
+list index out of range
+首页校验不成功
+新产品基本信息数据库校验不成功
+函数程序有误：
+<type 'exceptions.Exception'>
+'sdk_type'
+函数程序有误：
+<type 'exceptions.Exception'>
+list index out of range
+开始删除新添加的产品
+删除产品找不到元素
+Message: Unable to locate element: {"method":"link text","selector":"返回产品列表"}
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/dell/appdata/local/temp/tmplty516/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///c:/users/dell/appdata/local/temp/tmplty516/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+2016-09-18-17_34_01
+调用login函数
+登录成功
+进入产品管理页找总计
+总计读取成功
+开始添加新产品
+is_product_name_long函数调用
+产品名称自动保留100位长度校验成功
+is_time_right函数调用
+默认有效期校验成功
+成功添加新产品，开始校验
+is_add_product_ok函数调用
+添加产品后总计校验成功
+添加产品后数据库总计校验成功
+产品管理列表校验成功
+首页校验成功
+新产品在数据库中有且仅有一条
+新产品基本信息数据库校验成功
+接入终端与选择相符
+数据库中产品终端校验成功
+accesskey页签元素收集完毕
+开始删除新添加的产品
+删除产品成功
