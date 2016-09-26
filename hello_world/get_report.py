@@ -1,11 +1,11 @@
 # coding=utf-8
-import os,datetime,time
+import os,datetime,time,find_new
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
 # 设定根目录
 result_dir = r"E:\codings\ancunbase\report"
-
+filepath = find_new.find_newfile(result_dir)
 # 发送邮箱
 sender = "1017313484@qq.com"
 # 接收邮箱
