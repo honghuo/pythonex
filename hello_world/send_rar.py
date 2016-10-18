@@ -3,6 +3,7 @@ import smtplib,py_zip_file
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
+import datetime
 def sendemial():
     # 发送邮箱
     sender = "1017313484@qq.com"
@@ -23,10 +24,11 @@ def sendemial():
     msg["From"] = sender
     msg["To"] = receiver
     # 中的文字部分
-    part = MIMEText("hi，all：附件为安存基础平台的测试用例，日志和报告，请使用rar打开！")
+    part = MIMEText("hi，all:附件是基础平台本次测试的测试用例、日志和测试报告，请检阅",'plain','utf-8')
     msg.attach(part)
     # 这是附件部分
-    filepath = py_zip_file.py_zip()
+    filename = r"attach_file/"+ datetime.datetime.now().date().isoformat()
+    filepath = py_zip_file.py_zip(filename,)
     part = MIMEApplication(open(filepath,'rb').read())
     part.add_header("Content-Dispositon",'attachment',filename = "安存基础平台测试结果")
     msg.attach(part)
@@ -36,4 +38,4 @@ def sendemial():
     smtp.sendmail(sender,receiver,msg.as_string())
     smtp.quit()
     """删除"""
-# sendemial()
+sendemial()
